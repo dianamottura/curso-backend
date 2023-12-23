@@ -57,6 +57,7 @@ console.log("🔴 Se intenta agregar el sexto producto sin instanciar");
 products.addProduct(product6);
 
 console.log(" ");
+console.log(" ");
 console.log("🟡 --- Prueba del método getProductId() --- ");
 console.log("Buscando producto con ID existente");
 console.log(products.getProductById(2));
