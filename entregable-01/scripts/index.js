@@ -1,5 +1,5 @@
 // ---- DEFINICIÓN DE VARIABLES ---- //
-const products = new ProductManager();
+const products = new ProductManager("./products.json");
 
 // Testeo de un objeto que cumpla todas las condiciones
 const product1 = new Product({ title: "producto1", description: "Primer Producto", price: 1000, code: "abc123", stock: 10 });
@@ -17,7 +17,7 @@ const product5 = new Product({ title: "producto5", description: "Quinto Producto
 
 const product6 = { title: "producto6", description: "Sexto Producto", price: 5500, code: "abc567", stock: 45 };
 
-// -------- EJECUCIÓN DEL PROGRAMA -------- //
+// -------- EJECUCIÓN DEL PROGRAMA - TESTING -------- //
 console.clear();
 console.log("✅ Llamando a getProducts() apenas se instancia el array. Debe devolver un array vacío");
 console.log(products.getProducts());
